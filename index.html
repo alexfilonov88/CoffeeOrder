@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee order</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="dist/bundler.js" type="module"></script>
+    <link rel="icon" href="styles/coffee.png">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<ol class="nav" id="nav">
+    <li class="nav-item" aria-controls="new_order" id="li_new_order">
+        <label class="nav-link">New order</label>
+    </li>
+    <li class="nav-item" aria-controls="list_orders" id="li_list_orders">
+        <label class="nav-link">List of Orders</label>
+    </li>
+</ol>
+<div class="container" id="new_order" hidden>
+    <div class="card">
+        <header class="card-title">
+            <h1>Drink order</h1>
+        </header>
+        <form class="card-body">
+        </form>
+    </div>
+</div>
+<div class="card" id="list_orders" hidden>
+    <header class="card-title">
+        <h3>Pending orders</h3>
+    </header>
+    <div class="card-body">
+        <table class="table" id="orders"></table>
+    </div>
+</div>
+</body>
+</html>
